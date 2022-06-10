@@ -34,6 +34,7 @@ const SectionHero = props => {
           className={classNames(css.heroButton, { [css.heroButtonFEDelay]: mounted })}
         >
           <FormattedMessage id="SectionHero.browseButton" />
+          
         </NamedLink>
       </div>
     </div>

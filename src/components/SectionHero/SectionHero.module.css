@@ -93,6 +93,7 @@
   composes: animation;
 
   @media (--viewportMedium) {
+    border-radius: 45px;
     display: block;
     width: 260px;
   }

@@ -1,332 +1,75 @@
-@import '../../styles/propertySets.css';
-
-.root {
-  position: relative;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: var(--matterColorNegative);
-
-  width: 100%;
-  padding: 24px 24px 42px 24px;
-  background-color: var(--matterColorBright);
-
-  @media (--viewportMedium) {
-    padding: 0 24px 33px 24px;
-  }
-
-  @media (--viewportLarge) {
-    padding: 0 0 81px 0;
-    border-top: none;
-  }
+.footerCol {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-/* Wrapper to limit the top border in desktop
- * view from the outermost paddings*/
-.topBorderWrapper {
-  @media (--viewportMedium) {
-    padding-top: 41px;
-  }
-
-  @media (--viewportLarge) {
-    padding-top: 73px;
-
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: var(--matterColorNegative);
-  }
+.footerCol2 {
+  padding-left: 60px;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @media (--viewportMedium) {
-    margin: 0 auto;
-  }
-
-  @media (--viewportLarge) {
-    max-width: 1128px;
-    padding: 0 36px;
-  }
-
-  @media (--viewportXLarge) {
-    max-width: 1056px;
-    padding: 0;
-  }
+.footerLogo {
+  width: 150px;
+  margin-bottom: 10px;
 }
 
-/* Mobile only social media links */
-.someLiksMobile {
-  margin-bottom: 24px;
-
-  @media (--viewportMedium) {
-    display: none;
-  }
+.newsletterFields{
+  background: transparent;
+  border: 1px solid #979494;
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+  width: 40%;
 }
 
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 24px;
-  margin-right: 12px;
-  text-align: center;
+.container {
+  max-width: 85% !IMPORTANT;
+  margin: 0 auto;
 }
 
-/* Footer links */
-.links {
-  /* Layout */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
-  margin-bottom: 18px;
-
-  @media (--viewportMedium) {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-bottom: 0;
-  }
+.btnNews {
+  background: #ff7043;
+  color: #fff;
+  padding: 9px 20px;
+  border: 0px solid #ff7043;
+  margin-left: -4px;
+  min-height: 43px;
+  border-radius: 0 6px 6px 0;
 }
 
-/* Desktop: logo and organization stuff */
-.organization {
-  flex-shrink: 0;
-  flex-basis: 220px;
-  display: none;
-  margin-right: 24px;
-  margin-bottom: 24px;
-
-  @media (--viewportMedium) {
-    display: block;
-    order: 1;
-    margin-right: 12px;
-  }
-  @media (--viewportLarge) {
-    flex-basis: 240px;
-    margin-right: 57px;
-  }
-  @media (--viewportLargeWithPaddings) {
-    flex-basis: 250px;
-    margin-right: 12px;
-  }
+.footerBottomBar {
+  border-top: 1px solid #e0d7d5;
+  padding-top: 20px;
+  margin-top: 30px;
 }
 
-.logoLink {
-  display: block;
-  margin-bottom: 14px;
-}
-
-.logo {
-  object-fit: contain;
-  object-position: left center;
-  width: 100%;
-  height: 27px;
-}
-
-.organizationInfo {
-}
-
-.organizationDescription,
-.organizationCopyright {
-  @apply --marketplaceTinyFontStyles;
-}
-
-.organizationCopyright {
-  margin-top: 24px;
-}
-
-.copyrightLink {
-  color: var(--matterColor);
-  transition: var(--transitionStyleButton);
-
-  &:hover {
-    color: var(--marketplaceColor);
-    text-decoration: none;
-  }
-}
-
-/* Desktop and Mobile: links to more information */
-.infoLinks {
-  order: 2;
-  flex-basis: 165px;
-  margin-right: 24px;
-  margin-bottom: 24px;
-
-  @media (--viewportMedium) {
-    padding-top: 2px;
-    margin-right: 12px;
-  }
-}
-
-.list {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.listItem {
-  min-height: 24px;
-  margin-bottom: 6px;
-
-  @media (--viewportMedium) {
-    margin-bottom: 0;
-  }
-}
-
-.link {
-  /* Font */
-  @apply --marketplaceH5FontStyles;
-  line-height: 20px;
-  color: var(--matterColor);
-  transition: var(--transitionStyleButton);
-
-  margin-top: 0;
-  margin-bottom: 12px;
-
-  &:hover {
-    color: var(--marketplaceColor);
-    text-decoration: none;
-  }
-
-  @media (--viewportMedium) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-/* Desktop and Mobile: searches - first column */
-.searches {
-  order: 3;
-  flex-basis: 165px;
-  margin-right: 24px;
-  margin-bottom: 24px;
-
-  @media (--viewportMedium) {
-    padding-top: 2px;
-    margin-right: 12px;
-  }
-}
-
-/* Desktop and Mobile: searches - second column */
-/* This is not always visible */
-.searchesExtra {
-  order: 4;
-  flex-basis: 165px;
-  margin-right: 24px;
-  margin-bottom: 24px;
-
-  @media (--viewportMedium) {
-    padding-top: 2px;
-    margin-right: 12px;
-  }
-}
-
-/* Desktop: extra links (social media links and legal links) */
-.extraLinks {
-  flex-shrink: 0;
-  order: 5;
-  display: none;
-  flex-basis: 109px;
-  margin-right: 24px;
-  margin-bottom: 24px;
-
-  @media (--viewportMedium) {
-    display: flex;
-    flex-direction: column;
-    margin-right: 12px;
-  }
-  @media (--viewportLarge) {
-    margin-right: 0;
-  }
-}
-
-.legalMatters {
-  /* Get extra space from parent element (which is using flexbox) */
-  flex-grow: 1;
-
-  /* Layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.tosAndPrivacy {
-  margin-top: 0;
-  margin-bottom: 0;
-
-  @media (--viewportMedium) {
-    margin-bottom: 10px;
-  }
-}
-
-.legalLink,
-.privacy,
-.terms {
-  /* Font */
-  @apply --marketplaceTinyFontStyles;
-  color: var(--matterColorAnti);
-  transition: var(--transitionStyleButton);
-
-  margin-top: 0;
-  margin-bottom: 0;
-
-  &:hover {
-    color: var(--marketplaceColor);
-    text-decoration: none;
-  }
-
-  @media (--viewportMedium) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-/* Mobile: copyright mark and legal links for mobile */
-.copyrightAndTermsMobile {
-  /* Positioning */
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  /* Dimensions */
-  height: 60px;
-  padding: 0 24px 18px 24px;
-
-  /* Layout */
+.footerBottom {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-
-  background-color: var(--matterColorLight);
-
-  @media (--viewportMedium) {
-    display: none;
-  }
+  align-items: center;
 }
 
-.organizationCopyrightMobile {
-  /* Font */
-  @apply --marketplaceTinyFontStyles;
-  color: var(--matterColorAnti);
-  transition: var(--transitionStyleButton);
-
-  /* Tell parent component how much space this one prefers */
-  flex-basis: 172px;
-
-  margin-top: 0;
-  margin-bottom: 0;
-
-  &:hover {
-    color: var(--marketplaceColor);
-    text-decoration: none;
-  }
+.footerCopyright {
+  padding-bottom: 10px;
 }
 
-.tosAndPrivacyMobile {
-  flex-basis: 172px;
+.socialListing {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+
+.borderIcon {
+  padding: 2px 11px;
+  margin-right: 50px;
+  background-color: whitesmoke;
 }
 
-.privacy {
-  margin-right: 24px;
+.borderIcon:hover {
+  background-color: orange;
+}
+
+.background {
+  background: #fff3f0;
 }

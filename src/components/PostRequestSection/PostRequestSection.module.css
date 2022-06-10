@@ -1,0 +1,41 @@
+.dukeContractorThird {
+  background: url('../../assets/post-request.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 70px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.requestCall {
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+.smallHeading {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ff7043;
+  font-weight: 600;
+  position: relative;
+}
+
+.middleHeading {
+  font-size: 32px;
+  margin: 0px 0px 8px;
+  padding: 10px 0px;
+}	
+
+.darkBtn {
+  background: #ff7043;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 2px solid #ff7043;
+  font-size: 18px;
+}
+
+.bannerBtn {
+  padding-top: 20px;
+}

@@ -1,0 +1,105 @@
+.dukeContractorFourth {
+  background: #fff7f4;
+  padding: 70px 0;
+}
+
+.smallHeading {
+  content: "";
+  background: #ff7043;
+  height: 2px;
+  width: 75px;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  margin-left: 10px;
+}
+
+.saveImg {
+  text-align: right;
+}
+
+.middleHeading {
+  font-size: 36px;
+}
+
+.jobContractorCol {
+  justify-content: center;
+}
+
+.findJobWrapper {
+  background: #fff;
+  padding: 25px;
+  margin: 30px 0;
+}
+
+.jobsHeader {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.jobsTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.jobsSubheading {
+  margin: 0;
+  font-size: 14px;
+}
+
+.jobsLink {
+  padding: 4px 10px;
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+
+.jobIcon {
+  height: 72px;
+  width: 72px;
+  object-fit: cover;
+  border-radius: 100%;
+  object-position: top;
+}
+
+.jobLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.jobListing {
+  padding-left: 20px;
+}
+
+.jobIconImg {
+  height: 72px;
+  width: 72px;
+  border-radius: 40px; 
+}
+
+.bannerBtn {
+  padding-top: 20px;
+  text-align: center
+}
+
+.container {
+  max-width: 85% !IMPORTANT;
+  margin: 0 auto;
+}
+
+.darkBtn {
+  background: #ff7043;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 2px solid #ff7043;
+  font-size: 18px;
+}
+
+.listFont {
+  font-size: 13px;
+}

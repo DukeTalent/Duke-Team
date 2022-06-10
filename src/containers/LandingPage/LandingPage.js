@@ -17,7 +17,13 @@ import {
   LayoutWrapperMain,
   LayoutWrapperFooter,
   Footer,
+  PortfolioSection,
+  PostRequestSection,
+  OurProjectsSection,
+  FindJobsSection,
+  FooterSection
 } from '../../components';
+
 import { TopbarContainer } from '../../containers';
 
 import facebookImage from '../../assets/yogatimeFacebook-1200x630.jpg';
@@ -69,19 +75,19 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
+          
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
-                <SectionLocations />
+                <PortfolioSection />
               </div>
             </li>
             <li className={css.section}>
-              <div className={css.sectionContent}>
-                <SectionHowItWorks
-                  currentUserListing={currentUserListing}
-                  currentUserListingFetched={currentUserListingFetched}
-                />
-              </div>
+              <PostRequestSection />
+            </li>
+            <li className={css.section}>
+              <FindJobsSection />
+              <OurProjectsSection />
             </li>
           </ul>
         </LayoutWrapperMain>

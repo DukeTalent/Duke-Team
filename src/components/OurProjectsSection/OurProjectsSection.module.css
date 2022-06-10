@@ -1,0 +1,67 @@
+
+
+.mainTabs {
+  background: url('../../assets/ourproject.png');
+  padding: 10px;
+  background-size: cover;
+  background-color: transparent !important;
+  border: none !important;
+  justify-content: space-around;
+}
+
+.navTabs {
+    color: #ff7043 !important;
+}
+
+.navItem {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.navItem:hover {
+  color: orange;
+}
+
+.navLink {
+  padding: 16px 30px !important;
+  border: 0px;
+  font-weight: 600;
+}
+
+.navContainer {
+  max-width: 85% !IMPORTANT;
+  margin: 0 auto;
+}
+
+.borderIcon {
+  padding: 2px 11px;
+  margin-right: 50px;
+  background-color: whitesmoke;
+}
+
+
+.smallHeading {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ff7043;
+  font-weight: 600;
+  position: relative;
+}
+
+.smallHeading::after {
+  content: "";
+    background: #ff7043;
+    height: 2px;
+    width: 75px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    margin-left: 10px;
+}
+
+.middleHeading {
+  font-size: 36px;
+}
