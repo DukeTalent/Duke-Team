@@ -49,7 +49,7 @@ const renderSocialMediaLinks = intl => {
     >
     </ExternalLink>
   ) : null;
-  
+
   return [fbLink, twitterLink, instragramLink].filter(v => v != null);
 };
 

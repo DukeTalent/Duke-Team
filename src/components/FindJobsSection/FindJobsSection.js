@@ -10,9 +10,6 @@ const FineJobsSection = props =>
   return (
     <section className={css.dukeContractorFourth}>
     <div className={css.container}>
-        <div className={css.bannerBtn && 'center'}>
-          <a className="dark-btn" href="#">Find Jobs</a>
-        </div>
         <h3 className={css.smallHeading}>Find Jobs</h3>
         <h2 className={css.middleHeading}>Jobs</h2>
           <div className={css.jobContractorCol && 'row'}>
@@ -102,5 +99,5 @@ const FineJobsSection = props =>
   </section>
   );
 };
- 
+
 export default FineJobsSection;

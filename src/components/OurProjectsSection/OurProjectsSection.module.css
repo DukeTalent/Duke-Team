@@ -25,7 +25,7 @@
 }
 
 .navLink {
-  padding: 16px 30px !important;
+  padding: 16px 55px !important;
   border: 0px;
   font-weight: 600;
 }
@@ -65,3 +65,57 @@
 .middleHeading {
   font-size: 36px;
 }
+
+.imgSizee {
+  height: 348px !IMPORTANT;
+  padding: 10px !IMPORTANT;
+  object-fit: cover !IMPORTANT;
+}
+
+.sliderAbs{
+  position: absolute;
+  bottom: 24px;
+  color: #fff;
+  left: 20px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 1.75rem;
+}
+.dukeContractor{
+  padding: 70px 0 90px 0;
+}
+
+.carousalPad{
+  padding-top: 40px;
+}
+
+:global(.owl-next) {
+  position: absolute !important;
+  top: 42% !important;
+  right: -40px !important;
+  padding: 0px 15px 6px 15px !important;
+  background-color: rgb(255, 255, 255) !important;
+  display: inline-block !important;
+  border-radius: 50% !important;
+  font-size: 35px !important;
+  line-height: 35px !important;
+  color: #e0571d !important;
+  /*box-shadow: 0 0 8px rgb(0 0 0 / 25%) !important;*/
+}
+
+:global(.owl-prev) {
+  position: absolute;
+  top: 42% !important;
+  left: -40px !important;
+  padding: 0px 15px 6px 15px !important;
+  background: rgb(255, 255, 255) !important;
+  display: inline-block !important;
+  transform: translateY(-50%) !important;
+  border-radius: 50% !important;
+  font-size: 35px !important;
+  line-height: 35px !important;
+  color: #e0571d !important;
+  /*box-shadow: 0 0 20px rgb(0 0 0 / 25%) !important;*/
+}
+

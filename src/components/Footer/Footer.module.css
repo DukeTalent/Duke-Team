@@ -15,7 +15,7 @@
 .newsletterFields{
   background: transparent;
   border: 1px solid #979494;
-  padding: 10px;
+  padding: 2px;
   border-radius: 6px 0 0 6px;
   font-size: 14px;
   width: 40%;
@@ -31,7 +31,7 @@
   color: #fff;
   padding: 9px 20px;
   border: 0px solid #ff7043;
-  margin-left: -4px;
+  margin-left: 207px;
   min-height: 43px;
   border-radius: 0 6px 6px 0;
 }
@@ -58,7 +58,7 @@
   margin: 0;
   padding: 0;
 }
- 
+
 
 .borderIcon {
   padding: 2px 11px;
@@ -66,9 +66,6 @@
   background-color: whitesmoke;
 }
 
-.borderIcon:hover {
-  background-color: orange;
-}
 
 .background {
   background: #fff3f0;

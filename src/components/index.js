@@ -176,6 +176,8 @@ export { default as PortfolioSection } from './PortfolioSection/PortfolioSection
 export { default as PostRequestSection } from './PostRequestSection/PostRequestSection';
 export { default as FindJobsSection } from './FindJobsSection/FindJobsSection';
 export { default as OurProjectsSection } from './OurProjectsSection/OurProjectsSection';
+export { default as NavbarSection } from './NavbarSection/NavbarSection';
+export { default as SearchBar } from './SearchBar/SearchBar';
 export { default as FooterSection } from './FooterSection/FooterSection';
 export { default as SectionHowItWorks } from './SectionHowItWorks/SectionHowItWorks';
 export { default as SectionLocations } from './SectionLocations/SectionLocations';

@@ -4,6 +4,7 @@
   "private": true,
   "license": "Apache-2.0",
   "dependencies": {
+    "@babel/helper-builder-react-jsx-experimental": "^7.12.11",
     "@babel/runtime": "^7.17.9",
     "@loadable/component": "^5.14.1",
     "@loadable/server": "^5.14.2",
@@ -35,6 +36,7 @@
     "jstimezonedetect": "^1.0.7",
     "lodash": "^4.17.21",
     "mapbox-gl-multitouch": "^1.0.3",
+    "mdbreact": "^5.2.0",
     "moment": "^2.29.3",
     "moment-timezone": "^0.5.34",
     "object.entries": "^1.1.5",
@@ -54,7 +56,9 @@
     "react-helmet-async": "^1.3.0",
     "react-intl": "^5.25.1",
     "react-moment-proptypes": "^1.8.1",
+    "react-owl-carousel": "^2.3.3",
     "react-redux": "^7.2.8",
+    "react-responsive": "^9.0.0-beta.10",
     "react-router-dom": "^5.3.2",
     "react-with-direction": "^1.4.0",
     "redux": "^4.1.2",
@@ -64,7 +68,8 @@
     "sharetribe-scripts": "5.0.1",
     "smoothscroll-polyfill": "^0.4.0",
     "source-map-support": "^0.5.21",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "bfj": "^7.0.2",
