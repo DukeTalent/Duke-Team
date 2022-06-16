@@ -4,11 +4,19 @@ import contractor1 from "../../assets/contractor2@2x.png";
 import contractor2 from "../../assets/contractor1@2x.png";
 import contractor3 from "../../assets/contractor3@2x.png";
 import save from "../../assets/save.png";
+// import { FormattedMessage } from '../../util/reactIntl';
+import { FormattedMessage } from 'react-intl';
+import { NamedLink } from '../../components';
+// import classNames from 'classnames';
+import classNames from 'classnames';
+import NamedRedirect from '../NamedRedirect/NamedRedirect';
 
-const FineJobsSection = props =>
+
+
+const FindJobsSection = props =>
 {
   return (
-    <section className={css.dukeContractorFourth}>
+  <section className={css.dukeContractorFourth}>
     <div className={css.container}>
         <h3 className={css.smallHeading}>Find Jobs</h3>
         <h2 className={css.middleHeading}>Jobs</h2>
@@ -39,7 +47,7 @@ const FineJobsSection = props =>
                   <div className="job-btn"><a className="upload-btn" href="#">Apply</a></div>
               </div>
             </div>
-              <div className="col-12 col-md-6 col-lg-4 jobs-col">
+            <div className="col-12 col-md-6 col-lg-4 jobs-col">
               <div className={css.findJobWrapper}>
                   <div className={css.saveImg} ><img src={save} alt="Logo" /></div>
                   <div className={css.jobsHeader}>
@@ -92,12 +100,24 @@ const FineJobsSection = props =>
                </div>
             </div>
           </div>
-            <div className={css.bannerBtn}>
+            {/* <div className={css.bannerBtn}>
               <a className={css.darkBtn} href="#">Find Jobs</a>
+            </div> */}
+
+            {/* <Link to="../../assets/contractor2@2x.png">
+              <a className={css.darkBtn} href="#">Find Jobs</a>
+            </Link> */}
+            <div className={css.bannerBtn}>
+              <NamedLink className={css.darkBtn} name="FindJobsPage">
+                Find Job
+              </NamedLink>
             </div>
+
+
+
     </div>
   </section>
   );
 };
 
-export default FineJobsSection;
+export default FindJobsSection;
