@@ -1,0 +1,54 @@
+.navpad{
+  padding: 13px 0 !IMPORTANT;
+}
+.navLogo {
+  width: 150px;
+  margin-bottom: -11%;
+}
+.navbarCollapse {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+}
+.buttonsMargin{
+  margin-left: 90%;
+  padding: 16px 55px !important;
+
+}
+.registerBtn {
+  background: #ff7043;
+  padding: 12px 40px;
+  border-radius: 50px;
+  color: #fff;
+  margin:  0 20px 0 0 ;
+}
+.loginBtn {
+  color: #000 !important;
+  padding: 31px 4px !important;
+}
+
+.contBtn {
+  color: #000 !important;
+  border-bottom: 3px solid #ff7043;
+  padding: 31px 4px !important;
+  display: "flex";
+  justify-content: "space-between";
+}
+
+.formControl {
+  position: relative;
+  border-radius: 40px;
+  padding: 10px 20px !important;
+  height: auto;
+  border-color: #000;
+  font-size: 14px;
+}
+
+.navContainer {
+  max-width: 85% !IMPORTANT;
+  margin: 0 auto;
+}
+
+.navbarContainer{
+  margin-top: -1.5%;
+}

@@ -1,0 +1,169 @@
+@import '../../styles/propertySets.css';
+
+/* Animation for the hero elements */
+
+@keyframes animationTitle {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+/* Shared animation rules */
+.animation {
+  animation-name: animationTitle;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 3s;
+
+  visibility: hidden;
+  opacity: 1;
+  position: relative;
+}
+
+
+.dukeContractorFourth {
+  background: #fff7f4;
+  padding: 70px 0;
+}
+
+.smallHeading {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ff7043;
+  font-weight: 600;
+  position: relative;
+}
+
+.smallHeading::after {
+  content: "";
+    background: #ff7043;
+    height: 2px;
+    width: 75px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    margin-left: 10px;
+}
+
+.middleHeading {
+  font-size: 36px;
+}
+
+.saveImg {
+  text-align: right;
+}
+
+
+.jobContractorCol {
+  justify-content: center;
+}
+
+.findJobWrapper {
+  background: #fff;
+  padding: 25px;
+  margin: 30px 0;
+  font-family: 'Poppins' !important;
+
+}
+
+.findJobWrapper:hover {
+  background-color: gray;
+}
+
+
+
+
+.jobsHeader {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.jobsTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.jobsSubheading {
+  margin: 0;
+  font-size: 14px;
+}
+
+.jobsLink {
+  padding: 4px 10px;
+  border: 1px solid #eee;
+  font-size: 14px;
+}
+
+.jobIcon {
+  height: 72px;
+  width: 72px;
+  object-fit: cover;
+  border-radius: 100%;
+  object-position: top;
+}
+
+.jobLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.jobListing {
+  padding-left: 20px;
+}
+
+.jobIconImg {
+  height: 72px;
+  width: 72px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.bannerBtn {
+  padding-top: 20px;
+  text-align: center
+}
+
+.container {
+  max-width: 85% !IMPORTANT;
+  margin: 0 auto;
+}
+
+.darkBtn {
+  background: #ff7043;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 2px solid #ff7043;
+  font-size: 18px;
+}
+
+.listFont {
+  font-size: 13px;
+}
+
+.heroButton {
+  @apply --marketplaceButtonStyles;
+  composes: animation;
+
+  @media (--viewportMedium) {
+    border-radius: 45px;
+    display: block;
+    width: 260px;
+  }
+}
+.heroButtonFEDelay {
+  animation-delay: 0.3s;
+}
