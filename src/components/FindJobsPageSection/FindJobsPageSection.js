@@ -4,6 +4,7 @@ import contractor1 from "../../assets/contractor2@2x.png";
 import contractor2 from "../../assets/contractor1@2x.png";
 import contractor3 from "../../assets/contractor3@2x.png";
 import save from "../../assets/save.png";
+import { CollapseButton } from '../../components';
 // import { FormattedMessage } from '../../util/reactIntl';
 import { FormattedMessage } from 'react-intl';
 import { NamedLink } from '..';
@@ -19,6 +20,7 @@ const FindJobsSection = props =>
   <section className={css.dukeContractorFourth}>
     <div className={css.container}>
         <h2 className={css.middleHeading}>Find Jobs</h2>
+          <CollapseButton />
           <div className={css.jobContractorCol && 'row'}>
             <div className="col-12 col-md-6 col-lg-4 jobs-col">
               <div className={css.findJobWrapper}>
